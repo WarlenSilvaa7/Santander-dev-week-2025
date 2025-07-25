@@ -2,9 +2,11 @@ package me.dio.Santander_dev_week_2025.service;
 
 import me.dio.Santander_dev_week_2025.model.User;
 import me.dio.Santander_dev_week_2025.repository.UserRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.NoSuchElementException;
 
+@Service
 public class UserServiceImpl implements UserService{
 
     private final UserRepository userRepository;
