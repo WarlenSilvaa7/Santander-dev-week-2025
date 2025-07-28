@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    #add the environment variables before run the application
+    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+  jpa:
+    open-in-view: false
+    hibernate:
+      #if is the first time, change the ddl to "create"
+      ddl-auto: validate
